@@ -1,0 +1,18 @@
+version: '2'
+services:
+  memcached:
+    scale: 1
+    start_on_create: true
+  awxweb:
+    scale: 1
+    start_on_create: true
+  awxtask:
+    scale: 1
+    start_on_create: true
+  rabbitmq:
+    scale: 1
+    start_on_create: true
+  postgres:
+    scale: 1
+    start_on_create: true
+
