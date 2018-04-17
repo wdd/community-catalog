@@ -8,7 +8,7 @@ catalog:
   questions:
     - variable: "public_port"
       label: "Public Port"
-      description: "The public port that Guacamole listens on, defaults to 8080"
+      description: "The public port that AWX listens on, defaults to 8052"
       required: true
       default: 8052
       type: "int"
