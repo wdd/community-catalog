@@ -7,8 +7,8 @@ services:
       POSTGRES_USER: awx
       POSTGRES_PASSWORD: awxpass
       POSTGRES_DB: awx
-    labels:
-      io.rancher.scheduler.affinity:host_label: host=02
+#    labels:
+#      io.rancher.scheduler.affinity:host_label: host=02
 
   rabbitmq:
     image: "rabbitmq:3"
@@ -42,8 +42,8 @@ services:
       RABBITMQ_VHOST: awx
       MEMCACHED_HOST: memcached
       MEMCACHED_PORT: 11211
-    labels:
-      io.rancher.scheduler.affinity:host_label: host=02
+ #   labels:
+ #     io.rancher.scheduler.affinity:host_label: host=02
 
   awxtask:
     image: "ansible/awx_task:latest"
