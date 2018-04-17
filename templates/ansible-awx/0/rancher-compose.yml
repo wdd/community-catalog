@@ -10,7 +10,7 @@ catalog:
       label: "Public Port"
       description: "The public port that Guacamole listens on, defaults to 8080"
       required: true
-      default: 8080
+      default: 8052
       type: "int"
 
 services:

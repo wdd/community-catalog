@@ -25,7 +25,7 @@ services:
       - memcached
       - postgres
     ports:
-      - "8052:8052"
+      - ${public_port}:8052
     hostname: awxweb
     user: root
     environment:
